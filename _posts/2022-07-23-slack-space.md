@@ -12,7 +12,7 @@ You can use slack space to hide data as stated above. You can do this by install
 
 Now we can start by making a file that we will use to hide data using the `echo` command:
 
-```
+```bash
 eris@fnord:~/TestChamber$ echo "This will be the file we hide our data in." > slackSpace.txt
 eris@fnord:~/TestChamber$ cat slackSpace.txt 
 This will be the file we hide our data in.
@@ -22,7 +22,7 @@ From the above output we made a file containing some text and named it `slackSpa
 
 Next, we can user `bmap` to view view the amount of slack space found within the file:
 
-```
+```bash
 eris@fnord:~/TestChamber$ sudo bmap --mode slack slackSpace.txt
 getting from block 4751464
 file size was: 43
@@ -33,7 +33,7 @@ eris@fnord:~/TestChamber$
 
 The file size is 43 bytes. The block size is 4096 and if we subtract 43 from 4096, we'll see that there is 4053 bytes of slack space available in this file. If we wanted to hide a secret message within this slack space we can do, like so:
 
-```
+```bash
 eris@fnord:~/TestChamber$ echo "Secret message." | sudo bmap --mode putslack slackSpace.txt
 stuffing block 4751464
 file size was: 43
@@ -51,7 +51,7 @@ Basically, we used `bmap` in the `putslack --mode` to place the string "Secret m
 
 So we will use `bmap` to view the slack space again:
 
-```
+```bash
 eris@fnord:~/TestChamber$ sudo bmap --mode slack slackSpace.txt
 getting from block 4751464
 file size was: 43
