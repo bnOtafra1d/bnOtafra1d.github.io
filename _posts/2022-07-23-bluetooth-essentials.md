@@ -18,11 +18,11 @@ Using this model the master is able to coordinate and send data to any of it's s
 
 The Bluetooth Device Address (**BD_ADDR**) is a unique 48-bit identifier assigned to bluetooth devices by manufacturers. This is often presented as a 12-digit hexadecimal value (ex. **00:AB:22:CD:44:EF**). The first first 24 bits of the address identifies the manufacturer. The last 24 bits are the unique identifier of the address. In the picture below you can see the output of a scan using [bettercap](https://www.bettercap.org/) which shows the name of numerous bluetooth devices and their unique addresses:
 
-![image-20220723144819584](/home/eris/snap/typora/57/.config/Typora/typora-user-images/image-20220723144819584.png)
+![image-20220723144819584](/images/image-20220723144819584.png)
 
 Bluetooth devices can also have user-friendly names such as the device named **Infinitime** above, as well as the picture below which lists devices linked to the master:
 
-![image-20220723145714568](/home/eris/snap/typora/57/.config/Typora/typora-user-images/image-20220723145714568.png)
+![image-20220723145714568](/images/image-20220723145714568.png)
 
 ### Connection Process
 
