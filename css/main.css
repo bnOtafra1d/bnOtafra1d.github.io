@@ -45,6 +45,7 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+    color: #657b83;
 }
 
 ul li::before {
